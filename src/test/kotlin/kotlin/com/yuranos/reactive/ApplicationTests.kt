@@ -29,7 +29,7 @@ class ApplicationTests {
     fun getPostsShouldBeOK() {
         client
                 .get()
-                .uri("/posts")
+                .uri("/eventRepository")
                 .accept(MediaType.APPLICATION_JSON_UTF8)
                 .exchange()
                 .test()
